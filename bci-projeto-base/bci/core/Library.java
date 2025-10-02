@@ -30,10 +30,3 @@ public class Library implements Serializable {
   }
 }
 
-
-
-// duarte é porco 
-
-pulbic class Xpto {
-  
-}
