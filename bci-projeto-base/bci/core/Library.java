@@ -14,9 +14,29 @@ public class Library implements Serializable {
   private static final long serialVersionUID = 202501101348L;
 
   // FIXME define attributes
+  private Date _currentDate;
+  private boolean _isModified;
+  
+  
   // FIXME define contructor(s)
+  public Library() {
+    _currentDate = new Date();
+    _isModified = false;
+  }
+  
+  
   // FIXME define more methods
+  Date getCurrentDate() {
+    _currentDate.getCurrentDate();
+    return _currentDate;
+  }
 
+  Date advanceDays(int days) {
+    _currentDate.advanceDays(days);
+    _isModified = true;
+    
+    return _currentDate;
+  }
   /**
    * Read text input file at the beginning of the program and populates the
    * the state of this library with the domain entities represented in the text file.

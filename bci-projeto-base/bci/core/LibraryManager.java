@@ -13,16 +13,22 @@ public class LibraryManager {
 
   /** The object doing all the actual work. */
   /* The current library */
-  // FIXME: initialize this field
   private Library _library;
 
   private String _filename;
 
   public LibraryManager() {
     _library = new Library();
+
   }
 
+  public Date getCurrentDate() {
+    return _library.getCurrentDate();
+  }
 
+  public Date advanceDays(int days) {
+    return _library.advanceDays(days);
+  }
 
 
 
