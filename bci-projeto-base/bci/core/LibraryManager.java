@@ -2,8 +2,7 @@ package bci.core;
 
 import bci.core.exception.*;
 import java.io.*;
-
-// FIXME import classes
+import java.util.*;
 
 /**
  * The façade class. Represents the manager of this application. It manages the current
@@ -17,9 +16,15 @@ public class LibraryManager {
   // FIXME: initialize this field
   private Library _library;
 
-  // FIXME: add more fields if needed
-  // FIXME: add constructor if needed
-  // FIXME: add more methods if needed
+  private String _filename;
+
+  public LibraryManager() {
+    _library = new Library();
+  }
+
+
+
+
 
   /**
    * Saves the serialized application's state into the file associated to the current library
@@ -29,7 +34,15 @@ public class LibraryManager {
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
   public void save() throws MissingFileAssociationException, FileNotFoundException, IOException {
-    // FIXME implement serialization method
+    if (_filename == null)
+      throw new MissingFileAssociationException();
+
+    // 2. Criar um ObjectOutputStream para escrever o objeto
+    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(_filename))) {
+        // 3. Escrever o objeto _library para o arquivo
+        oos.writeObject(_library);
+    }
+    // O try-with-resources fecha automaticamente o stream
   }
 
   /**
@@ -42,7 +55,11 @@ public class LibraryManager {
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
   public void saveAs(String filename) throws FileNotFoundException, MissingFileAssociationException, IOException {
-    // FIXME implement serialization method
+    // 1. Guardar o novo filename
+    _filename = filename;
+    
+    // 2. Chamar o método save() que já faz o trabalho
+    save();
   }
 
   /**
@@ -54,7 +71,17 @@ public class LibraryManager {
    *         an error while processing this file.
    **/
   public void load(String filename) throws UnavailableFileException {
-    // FIXME implement serialization method
+    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
+        // 1. Ler o objeto do arquivo e fazer cast para Library
+        _library = (Library) ois.readObject();
+        
+        // 2. Guardar o filename para futuras operações save()
+        _filename = filename;
+        
+    } catch (IOException | ClassNotFoundException e) {
+        // 3. Se algo correr mal, lançar a exceção apropriada
+        throw new UnavailableFileException(filename);
+    }
   }
 
   /**
