@@ -17,5 +17,4 @@ class DoDisplayDate extends Command<LibraryManager> {
     int current = _receiver.getCurrentDate();
     _display.addLine(Message.currentDate(current));
   }
-
 }

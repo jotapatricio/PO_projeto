@@ -2,7 +2,7 @@ package bci.app.main;
 
 import bci.core.LibraryManager;
 import pt.tecnico.uilib.menus.Command;
-//FIXME add more imports if needed
+
 
 /**
  * 4.1.3. Advance the current date.
@@ -17,7 +17,6 @@ class DoAdvanceDate extends Command<LibraryManager> {
 
   @Override
   protected final void execute() {
-    //FIXME implement command
     int daysToAdvance = integerField("days");
     _receiver.advanceDays(daysToAdvance);
     

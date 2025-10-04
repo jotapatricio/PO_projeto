@@ -19,7 +19,10 @@ public class LibraryManager {
 
   public LibraryManager() {
     _library = new Library();
-
+    _filename = null;
+  }
+  public String getCurrentFileName(){
+    return _filename;
   }
 
   public int getCurrentDate() {
