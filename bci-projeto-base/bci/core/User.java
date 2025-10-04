@@ -1,6 +1,8 @@
 package bci.core;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private int _id;
     private String _behavior;
     private boolean _isActive;

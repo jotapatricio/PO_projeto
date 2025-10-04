@@ -22,14 +22,14 @@ class DoShowUser extends Command<LibraryManager> {
         int id = integerField("id");
 
         try {
-            User user = _receiver.getUserById(id); // tenta obter o utente
+            User _user = _receiver.getUserById(id); // tenta obter o utente
 
-            if (user == null) {
+            if (_user == null) {
                 throw new NoSuchUserException(id);
             }
 
             // Mostra a informação do utente usando o toString() do User
-            _display.popup(user.toString());
+            _display.popup(_user.toString());
 
         } catch (NoSuchUserException e) {
             throw e; // a framework trata a exibição do erro

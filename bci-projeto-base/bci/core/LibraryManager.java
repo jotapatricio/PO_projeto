@@ -1,5 +1,6 @@
 package bci.core;
 
+import bci.app.exception.UserRegistrationFailedException;
 import bci.core.exception.*;
 import java.io.*;
 import java.util.*;

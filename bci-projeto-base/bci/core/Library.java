@@ -2,6 +2,7 @@ package bci.core;
 
 import java.io.*;
 import bci.core.exception.UnrecognizedEntryException;
+import bci.app.exception.UserRegistrationFailedException;
 import java.util.*;
 // FIXME import classes
 
@@ -20,8 +21,8 @@ public class Library implements Serializable {
 
   private List<Creator> _creators;
   private List<Work> _works;
-  private List <User> _users = new ArrayList<>();
-  private int _nextUserId = 0;
+  private List <User> users = new ArrayList<>();
+  private int nextUserId = 1;
   private List<Requests> _requests;
 
   
@@ -47,20 +48,20 @@ public class Library implements Serializable {
   }
   
   public void registerUser(String name, String email){
-        User user = new User(_nextUserId++, name, email);
-        _users.add(user);
+        User user = new User(nextUserId++, name, email);
+        users.add(user);
     }
-
-
+  
+  
   public User getUser(int id) {
-    for (User u : _users)
+    for (User u : users)
       if (u.getID() == id)
           return u;
     return null;
     }
 
   public List<User> getAllUsers(){
-    return new ArrayList<>(_users);
+    return new ArrayList<>(users);
   }
 
   /**
