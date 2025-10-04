@@ -9,16 +9,17 @@ import pt.tecnico.uilib.menus.Command;
  */
 class DoAdvanceDate extends Command<LibraryManager> {
 
+
   DoAdvanceDate(LibraryManager receiver) {
     super(Label.ADVANCE_DATE, receiver);
-    //FIXME add command fields
-    
-    
+    addIntegerField("days", Prompt.daysToAdvance());
   }
 
   @Override
   protected final void execute() {
     //FIXME implement command
+    int daysToAdvance = integerField("days");
+    _receiver.advanceDays(daysToAdvance);
     
   }
 }
