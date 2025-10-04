@@ -20,7 +20,7 @@ public class Library implements Serializable {
 
   private List<Creator> _creators;
   private List<Work> _works;
-  private List<User> _users;
+  private List <User> _users = new ArrayList<>();
   private int _nextUserId = 0;
   private List<Requests> _requests;
 
