@@ -2,6 +2,7 @@ package bci.core;
 
 import java.io.*;
 import bci.core.exception.UnrecognizedEntryException;
+import java.util.*;
 // FIXME import classes
 
 /**
@@ -16,6 +17,11 @@ public class Library implements Serializable {
   // FIXME define attributes
   private Date _currentDate;
   private boolean _isModified;
+
+  private List<Creator> _creators;
+  private List<Work> _works;
+  private List<User> _users;
+  private List<Requests> _requests;
   
   
   // FIXME define contructor(s)

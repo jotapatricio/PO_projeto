@@ -22,12 +22,12 @@ public class LibraryManager {
 
   }
 
-  public Date getCurrentDate() {
-    return _library.getCurrentDate();
+  public int getCurrentDate() {
+    return _library.getCurrentDate().getCurrentDate();
   }
 
-  public Date advanceDays(int days) {
-    return _library.advanceDays(days);
+  public int advanceDays(int days) {
+    return _library.advanceDays(days).getCurrentDate();
   }
 
 
