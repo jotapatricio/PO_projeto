@@ -33,7 +33,18 @@ public class LibraryManager {
     return _library.advanceDays(days).getCurrentDate();
   }
 
+  public void registerUser(String name, String email){
+        _library.registerUser(name, email);
+    }
 
+  public User getUserById(int id){
+      return _library.getUser(id);
+    }
+
+
+  public java.util.List<User> getAllUsers() {
+      return _library.getAllUsers();
+    }
 
   /**
    * Saves the serialized application's state into the file associated to the current library

@@ -21,7 +21,9 @@ public class Library implements Serializable {
   private List<Creator> _creators;
   private List<Work> _works;
   private List<User> _users;
+  private int _nextUserId = 0;
   private List<Requests> _requests;
+
   
   
   // FIXME define contructor(s)
@@ -43,6 +45,24 @@ public class Library implements Serializable {
     
     return _currentDate;
   }
+  
+  public void registerUser(String name, String email){
+        User user = new User(_nextUserId++, name, email);
+        _users.add(user);
+    }
+
+
+  public User getUser(int id) {
+    for (User u : _users)
+      if (u.getID() == id)
+          return u;
+    return null;
+    }
+
+  public List<User> getAllUsers(){
+    return new ArrayList<>(_users);
+  }
+
   /**
    * Read text input file at the beginning of the program and populates the
    * the state of this library with the domain entities represented in the text file.
