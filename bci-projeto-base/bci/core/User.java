@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     private int _id;
     private String _behavior;
-    private boolean _isActive;
+    private String _isActive;
     private String _name;
     private String _email;
     private int _fine;
@@ -16,17 +16,20 @@ public class User implements Serializable {
         _name=name;
         _email=email;
         _fine=0;
-        _isActive=true;
+        _isActive="ACTIVO";
     }
 
-    boolean _isActive(){
+    String _isActive(){
         return _isActive;
     }
 
     public int getID(){return _id;}
 
     void changeActive(){
-        _isActive = !_isActive;
+        if (_isActive.equals("ACTIVO"))
+            _isActive = "SUSPENSO";
+        else
+            _isActive = "ACTIVO";
     }
 
     public String getBehavior() {
@@ -50,7 +53,7 @@ public class User implements Serializable {
     }
 
     public String toString(){
-        if (_isActive==true)
+        if (_isActive.equals("ACTIVO"))
             return _id + " - " + _name + " - " + _email + " - " + _behavior + " - " + _isActive;
         else
             return _id + " - " + _name + " - " + _email + " - " + _behavior + " - " + _isActive + " - EUR " + _fine;
