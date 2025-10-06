@@ -49,13 +49,38 @@ public class Library implements Serializable {
         User user = new User(nextUserId++, name, email);
         users.add(user);
     }
-  public void registerBook(int id,int copies,String title, int preco, Category category){
-        Work work = new Work(id,title,copies,category,preco, new ArrayList<Creator>());
-        _works.add(work);
+  public void registerBook(String title, int copies, Category category, int preco, String isbn, List<Creator> diretor){
+    int newId = _nextWorkId++;
+    
+    Work book = new Book(newId ,title,copies,category,preco,isbn,new ArrayList<Creator>());
+
+    _works.add(book);
     }
-  public void registerDVD(int id,int copies,String title, int preco, Category category){
-        Work work = new Work(id,title,copies,category,preco, new ArrayList<Creator>());
-        _works.add(work);
+  public void registerDVD(String title, int copies, Category category, int preco, int igac, List<Creator> diretor){
+    // 1. Gerar o ID aqui
+    int newId = _nextWorkId++;
+    
+    // 2. Criar o objeto DVD (assumindo que o seu construtor de DVD aceita estes argumentos)
+    Work dvd = new DVD(newId, title, copies, category, preco, igac, diretor);
+    
+    // 3. Adicionar à lista
+    _works.add(dvd);
+    }
+  public Creator registerCreator(String name){
+        Creator existing = getCreator(name);
+        if (existing != null) {
+            return existing;
+        }
+        Creator creator = new Creator(name);
+        _creators.add(creator);
+        return creator;
+    }
+  
+  public Creator getCreator(String name){
+    for (Creator c : _creators)
+      if (c.getName().equals(name))
+          return c;
+    return null;
     }
   
   public User getUser(int id) {
@@ -68,6 +93,21 @@ public class Library implements Serializable {
   public List<User> getAllUsers(){
     return new ArrayList<>(users);
   }
+  
+  public Work getWork(int id) {
+    for (Work w : _works) {
+        if (w.getId() == id) {
+            return w;
+        }
+    }
+    return null; // ou lança exceção aqui se preferires
+  }
+
+  public List<Work> getAllWorks() {
+    List<Work> list = new ArrayList<>(_works);
+    list.sort(Comparator.comparingInt(Work::getId));
+    return list;
+  }
 
   /**
    * Read text input file at the beginning of the program and populates the
@@ -77,76 +117,11 @@ public class Library implements Serializable {
    * @throws UnrecognizedEntryException if some entry is not correct
    * @throws IOException if there is an IO erro while processing the text file
    **/
-  void importFile(String filename) throws UnrecognizedEntryException, IOException {
-  try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-    String line;
-    while ((line = reader.readLine()) != null) {
-      String[] parts = line.split(":");
-      if (parts.length == 0) continue;
-      String entryType = parts[0].trim();
-
-      try {
-        switch (entryType) {
-          case "USER": {
-            if (parts.length < 3) throw new UnrecognizedEntryException(line);
-            String userName = parts[1].trim();
-            String userEmail = parts[2].trim();
-            User user = new User(nextUserId++, userName, userEmail);
-            users.add(user);
-            break;
-          }
-
-          case "BOOK": {
-            // Expect: BOOK:title:authors(comma-separated):price:category:isbn:copies
-            if (parts.length < 7) throw new UnrecognizedEntryException(line);
-            String bookTitle = parts[1].trim();
-            String authorsStr = parts[2].trim();
-            int bookPreco = Integer.parseInt(parts[3].trim());
-            Category bookCategory = Category.valueOf(parts[4].trim());
-            String isbn = parts[5].trim();
-            int bookCopies = Integer.parseInt(parts[6].trim());
-
-            List<Creator> creators = new ArrayList<>();
-            for (String a : authorsStr.split(",")) {
-              String name = a.trim();
-              if (!name.isEmpty()) creators.add(new Creator(name));
-            }
-            Book book = new Book(_nextWorkId++, bookTitle, bookCopies, bookCategory, bookPreco, isbn, creators);
-            _works.add(book);
-            break;
-          }
-
-          case "DVD": {
-            // Expect: DVD:title:director:price:category:igac:copies
-            if (parts.length < 7) throw new UnrecognizedEntryException(line);
-            String title = parts[1].trim();
-            String directorStr = parts[2].trim();
-            int preco = Integer.parseInt(parts[3].trim());
-            Category category = Category.valueOf(parts[4].trim());
-            int igac = Integer.parseInt(parts[5].trim());
-            int copies = Integer.parseInt(parts[6].trim());
-
-            List<Creator> directors = new ArrayList<>();
-            if (!directorStr.isEmpty()) directors.add(new Creator(directorStr));
-            DVD dvd = new DVD(_nextWorkId++, title, copies, category, preco, igac, directors);
-            _works.add(dvd);
-            break;
-          }
-
-          default:
-            throw new UnrecognizedEntryException(entryType);
-        }
+  public void importFile(String filename) throws UnrecognizedEntryException, IOException {
+        MyParser parser = new MyParser(this);
+        parser.parseFile(filename);
         _isModified = true;
-        } catch (IllegalArgumentException e) {
-          throw new UnrecognizedEntryException(line, e);
-        }
     }
-  } catch (FileNotFoundException e) {
-    throw new IOException(e);
-  } catch (IOException e) {
-    throw new IOException(e);
-  }
-  }
 
 }
 

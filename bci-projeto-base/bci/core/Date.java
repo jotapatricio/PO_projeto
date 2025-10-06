@@ -9,7 +9,7 @@ class Date implements Serializable {
     private int _currentDate;
 
     Date() {
-        _currentDate = 0;
+        _currentDate = 1;
     }
 
     int getCurrentDate() {

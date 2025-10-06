@@ -12,7 +12,7 @@ public class User implements Serializable {
 
     User(int id, String name, String email){
         _id=id;
-        _behavior="CUMPRIDOR";
+        _behavior="NORMAL";
         _name=name;
         _email=email;
         _fine=0;
@@ -26,8 +26,27 @@ public class User implements Serializable {
     public int getID(){return _id;}
 
     void changeActive(){
-        if(_isActive==true)_isActive=false;
-        else _isActive=true;
+        _isActive = !_isActive;
+    }
+
+    public String getBehavior() {
+        return _behavior;
+    }
+
+    public void setBehavior(String behavior) {
+        _behavior = behavior;
+    }
+
+    public int getFine() {
+        return _fine;
+    }
+
+    public void addFine(int amount) {
+        _fine += amount;
+    }
+
+    public void payFine() {
+        _fine = 0;
     }
 
     public String toString(){

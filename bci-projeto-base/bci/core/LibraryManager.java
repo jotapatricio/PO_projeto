@@ -1,5 +1,6 @@
 package bci.core;
 
+import bci.app.exception.NoSuchWorkException;
 import bci.app.exception.UserRegistrationFailedException;
 import bci.core.exception.*;
 import java.io.*;
@@ -36,16 +37,28 @@ public class LibraryManager {
 
   public void registerUser(String name, String email){
         _library.registerUser(name, email);
-    }
+  }
 
   public User getUserById(int id){
       return _library.getUser(id);
-    }
-
+  }
 
   public java.util.List<User> getAllUsers() {
       return _library.getAllUsers();
+  }
+
+  public Work getWork(int id) throws NoSuchWorkException {
+    Work work = _library.getWork(id); // chama o método da Library
+    if (work == null) {
+        throw new NoSuchWorkException(id); // exceção definida no projeto
     }
+    return work;
+  }
+
+  public Collection<Work> getAllWorks() {
+    return _library.getAllWorks();
+  }
+
 
   /**
    * Saves the serialized application's state into the file associated to the current library

@@ -1,11 +1,11 @@
 package bci.app.work;
 
 import bci.core.LibraryManager;
+import bci.core.Work;
 import pt.tecnico.uilib.menus.Command;
-//FIXME add more imports if needed
 
 /**
- * Command to display all works.
+ * 4.3.1. Mostrar todas as obras.
  */
 class DoDisplayWorks extends Command<LibraryManager> {
 
@@ -15,6 +15,9 @@ class DoDisplayWorks extends Command<LibraryManager> {
 
   @Override
   protected final void execute() {
-    //FIXME implement command
+    for (Work work : _receiver.getAllWorks()) {
+      _display.addLine(work.toString());
+    }
+    _display.display();
   }
 }
