@@ -3,7 +3,7 @@ package bci.core;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private int _id;
+    private final int _id;
     private String _behavior;
     private String _isActive;
     private String _name;
@@ -30,6 +30,13 @@ public class User implements Serializable {
             _isActive = "SUSPENSO";
         else
             _isActive = "ACTIVO";
+    }
+    public String getName(){
+        return _name;
+    }
+
+    public String getEmail(){
+        return _email;
     }
 
     public String getBehavior() {

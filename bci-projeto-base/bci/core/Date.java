@@ -3,9 +3,8 @@ package bci.core;
 import java.io.Serializable;
 
 class Date implements Serializable {
-    @java.io.Serial 
-    private static final long serialVersionUID = 202501101348L;
 
+    private static final long serialVersionUID = 202501101348L;
     private int _currentDate;
 
     Date() {

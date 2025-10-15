@@ -3,21 +3,20 @@ package bci.core;
 import java.io.Serializable;
 public enum Category implements Serializable{
 
-     // 1. Constantes ENUM em maiúsculas e sem caracteres especiais/espaços
+    //Constantes ENUM 
     FICTION("Ficção"),
     REFERENCE("Referência"),
-    SCITECH("Técnica e Científica"); // O nome interno (constante) deve ser sem espaços
+    SCITECH("Técnica e Científica"); 
 
-    // 2. Campo para armazenar o nome amigável (como aparece no ficheiro/output)
+    
     private final String _displayName;
 
-    // 3. Construtor
+    //Construtor
     Category(String displayName) {
         _displayName = displayName;
     }
 
     // 4. Método para devolver o nome amigável (usado no toString)
-    @Override
     public String toString() {
         return _displayName;
     }

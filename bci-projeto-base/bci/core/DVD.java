@@ -15,7 +15,8 @@ public class DVD extends Work {
 
     @Override
     public String toString() {
-        return getId() + " - " + getCopies() + " - DVD - " + getTitle() + " - " + getPreco() + " - " + getCategory() + " - " + getDirector() + " - " + getIgac() ;
+        return getId() + " - " + getCopies() + " de " + getCopies() + " - DVD - " + getTitle() + " - " + getPreco() + " - " 
+        + getCategory() + " - " + getDirector() + " - " + getIgac();
     }
     
 }

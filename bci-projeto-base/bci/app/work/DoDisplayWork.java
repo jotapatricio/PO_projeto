@@ -13,18 +13,20 @@ class DoDisplayWork extends Command<LibraryManager> {
 
   DoDisplayWork(LibraryManager receiver) {
     super(Label.SHOW_WORK, receiver);
-    addIntegerField("id", Prompt.creatorId());
+    addIntegerField("id", Prompt.workId());
   }
 
-  @Override
   protected final void execute() throws CommandException {
     int id = integerField("id");
 
     try {
-      Work work = _receiver.getWork(id);  
+      Work work = _receiver.getWork(id);
+      if (work == null) { //evita NullPointerException
+        throw new NoSuchWorkException(id);
+      }
       _display.popup(work.toString());
     } catch (NoSuchWorkException e) {
-      throw e; 
+      throw e; //a framework trata a exibição do erro
     }
   }
 }

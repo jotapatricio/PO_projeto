@@ -12,17 +12,14 @@ import java.util.*;
  */
 public class LibraryManager {
 
-
-  /** The object doing all the actual work. */
-  /* The current library */
   private Library _library;
-
   private String _filename;
 
   public LibraryManager() {
     _library = new Library();
     _filename = null;
   }
+
   public String getCurrentFileName(){
     return _filename;
   }
@@ -43,10 +40,10 @@ public class LibraryManager {
       return _library.getUser(id);
   }
 
-  public java.util.List<User> getAllUsers() {
+  public List <User> getAllUsers() {
       return _library.getAllUsers();
   }
-
+  
   public Work getWork(int id) throws NoSuchWorkException {
     Work work = _library.getWork(id); // chama o método da Library
     if (work == null) {
@@ -55,10 +52,21 @@ public class LibraryManager {
     return work;
   }
 
-  public Collection<Work> getAllWorks() {
-    return _library.getAllWorks();
+  public Collection <Work> getAllWorks() {
+    return Collections.unmodifiableCollection(_library.getAllWorks());
   }
 
+  public Creator getCreator(String name) {
+        return _library.getCreator(name);
+    }
+
+  public boolean isModified() {
+    return _library.getIsModified();
+  }
+
+  public void setUnmodified() {
+    _library.makeSetUnmodified();
+  }
 
   /**
    * Saves the serialized application's state into the file associated to the current library
@@ -67,6 +75,7 @@ public class LibraryManager {
    * @throws MissingFileAssociationException if the current library does not have a file.
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
+
   public void save() throws MissingFileAssociationException, FileNotFoundException, IOException {
     if (_filename == null)
       throw new MissingFileAssociationException();
@@ -76,6 +85,7 @@ public class LibraryManager {
         // 3. Escrever o objeto _library para o arquivo
         oos.writeObject(_library);
     }
+    setUnmodified();
     // O try-with-resources fecha automaticamente o stream
   }
 
@@ -94,6 +104,7 @@ public class LibraryManager {
     
     // 2. Chamar o método save() que já faz o trabalho
     save();
+    setUnmodified();
   }
 
   /**
@@ -111,6 +122,7 @@ public class LibraryManager {
         
         // 2. Guardar o filename para futuras operações save()
         _filename = filename;
+        setUnmodified();
         
     } catch (IOException | ClassNotFoundException e) {
         // 3. Se algo correr mal, lançar a exceção apropriada

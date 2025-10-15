@@ -25,7 +25,7 @@ class DoSaveFile extends Command<LibraryManager> {
 
     if (_fileNameToSave == null) {
       Form form = new Form();
-      form.addStringField("_newFileName", Prompt.saveAs());
+      form.addStringField("_newFileName", Prompt.newSaveAs());
       form.parse();
 
       _fileNameToSave = form.stringField("_newFileName");

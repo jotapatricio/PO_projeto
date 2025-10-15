@@ -13,7 +13,6 @@ class DoDisplayWorks extends Command<LibraryManager> {
     super(Label.SHOW_WORKS, receiver);
   }
 
-  @Override
   protected final void execute() {
     for (Work work : _receiver.getAllWorks()) {
       _display.addLine(work.toString());

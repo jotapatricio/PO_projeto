@@ -16,7 +16,6 @@ public class Creator implements Serializable{
     }
 
     // implementa equals and hashcode based on name
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -24,7 +23,6 @@ public class Creator implements Serializable{
         return _name.equals(creator._name);
     }
 
-    @Override
     public int hashCode() {
         return _name.hashCode();
     }

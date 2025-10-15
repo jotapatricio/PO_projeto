@@ -58,7 +58,7 @@ class MyParser {
   }
 
   // Assumo que há um método em Library para registar um utente (por exemplo, com o nome registerUser
-  // Caso o método lançe alguma excepção do core, então será necessário apanhá-la. Se não lançar,
+  // Caso o método lance alguma excepção do core, então será necessário apanhá-la. Se não lançar,
   // tirar o try-catch
   private void parseUser(String[] components, String line) throws UnrecognizedEntryException {
     try {
@@ -69,7 +69,7 @@ class MyParser {
     } catch (UnrecognizedEntryException e) {}
   }
 
-    // Assumo que há um método em Library que devolve o criador dado um nome (e cria-o caso não exista)
+  // Assumo que há um método em Library que devolve o criador dado um nome (e cria-o caso não exista)
   // com o nome registerCriator(String)
   // Há um método que regista um DVD em Library dado os vários componentes ou um método que adiciona uma obra
   private void parseDvd(String[] components, String line) throws UnrecognizedEntryException {

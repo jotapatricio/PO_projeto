@@ -18,6 +18,8 @@ class DoAdvanceDate extends Command<LibraryManager> {
   @Override
   protected final void execute() {
     int daysToAdvance = integerField("days");
+    if (daysToAdvance <= 0) return;
+       
     _receiver.advanceDays(daysToAdvance);
     
   }

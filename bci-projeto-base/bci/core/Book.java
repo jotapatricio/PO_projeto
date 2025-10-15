@@ -2,7 +2,6 @@ package bci.core;
 
 import java.util.*;
 
-
 public class Book extends Work {
     private final String _isbn;
 
@@ -10,11 +9,9 @@ public class Book extends Work {
         super(id, title, copies, category, preco, creators);
         _isbn = isbn;
     }
+
     public String getIsbn() {
         return _isbn;
-    }
-    public List<Creator> getCreators() {
-        return super.getCreators();
     }
 
     private String formatCreators() {
@@ -23,15 +20,15 @@ public class Book extends Work {
         for (int i = 0; i < creators.size(); i++) {
             sb.append(creators.get(i).getName());
             if (i < creators.size() - 1) {
-                sb.append(", ");
+                sb.append("; ");
             }
         }
         return sb.toString();
     }
     
-    @Override
     public String toString() {
-        return getId() + " - " + getCopies() + " - Livro - " + getTitle() + " - " + getPreco() + " - " + getCategory() + " - " + formatCreators() + " - " + getIsbn() ;
+        return getId() + " - " + getCopies() + " de " + getCopies() + " - Livro - " + getTitle() + " - " + getPreco() + " - " + 
+        getCategory() + " - " + formatCreators() + " - " + getIsbn();
     }
 
 }
