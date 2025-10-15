@@ -1,0 +1,237 @@
+*** testsBoth/A-11-09-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-11-09-M-ok.outhyp	2025-10-15 16:11:32.501906300 +0100
+***************
+*** 13,21 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 13,28 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 47,60 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- O utente 2 deve pagar uma multa de EUR 10.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 54,75 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 71,79 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 19.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 86,101 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 105,118 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- O utente 2 deve pagar uma multa de EUR 10.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 127,148 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 157,165 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 29.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 187,202 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 195,201 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - SUSPENSO - EUR 0
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 232,238 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 219,232 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- O utente 2 deve pagar uma multa de EUR 10.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 256,277 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 247,253 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - FALTOSO - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 292,298 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente

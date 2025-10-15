@@ -1,0 +1,26 @@
+*** testsBoth/A-03-04-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-03-04-M-ok.outhyp	2025-10-15 16:11:16.826873300 +0100
+***************
+*** 16,25 ****
+  5 - Alterar inventário de uma obra
+  0 - Sair
+  Escolha uma opção: 3
+- Introduza o termo de pesquisa: Fons
+- 3 - 10 de 10 - DVD - Era uma vez na Amadora - 20 - Ficção - Fernando Fonseca - 200505550
+- 4 - 10 de 10 - DVD - 48 Horas para o Exame - 12 - Ficção - Orlando Fonseca - 200505553
+- 7 - 5 de 5 - DVD - Lumiar Selvagem - 20 - Ficção - Pedro Fonseca - 200505551
+  Menu de obras
+  1 - Mostrar obra
+  2 - Mostrar todas as obras
+--- 16,21 ----
+***************
+*** 27,32 ****
+--- 23,30 ----
+  4 - Mostrar todas as obras de um criador
+  5 - Alterar inventário de uma obra
+  0 - Sair
++ Escolha uma opção: Fons
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro

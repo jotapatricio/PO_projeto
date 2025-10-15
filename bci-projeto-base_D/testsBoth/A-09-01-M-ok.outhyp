@@ -1,0 +1,74 @@
+Menu Principal
+1 - Abrir ficheiro
+2 - Guardar ficheiro
+3 - Ver data
+4 - Avançar data
+5 - Menu de gestão de utentes
+6 - Menu de gestão de obras
+7 - Menu de gestão de requisições
+0 - Sair
+Escolha uma opção: 5
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 4
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 2
+Introduza o número de utente: 4
+4 - Luke Skywalker - last.jedi@universe.com - NORMAL - ACTIVO
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 1
+Introduza o nome do utente: 4
+Introduza o endereço de correio do utente: 3
+Novo utente criado com o número 3.
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 4
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 6
+Opção inválida!
+Menu de Gestão de Utentes
+1 - Registar utente
+2 - Mostrar utente
+3 - Listar utentes
+4 - Mostrar notificações de utente
+5 - Saldar multa de utente
+0 - Sair
+Escolha uma opção: 0
+Menu Principal
+1 - Abrir ficheiro
+2 - Guardar ficheiro
+3 - Ver data
+4 - Avançar data
+5 - Menu de gestão de utentes
+6 - Menu de gestão de obras
+7 - Menu de gestão de requisições
+0 - Sair
+Escolha uma opção: 0

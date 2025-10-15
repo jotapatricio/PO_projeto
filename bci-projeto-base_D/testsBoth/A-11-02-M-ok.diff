@@ -1,0 +1,65 @@
+*** testsBoth/A-11-02-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-11-02-M-ok.outhyp	2025-10-15 16:11:28.517300500 +0100
+***************
+*** 13,29 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 5
+! Introduza o número da obra: 3
+! Requisitar obra: Operação inválida: O utente 5 não existe.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 0
+- Introduza o número da obra: 3
+- Requisitar obra: Operação inválida: O utente 0 não existe.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 13,35 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 5
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 32,37 ****
+--- 38,54 ----
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
++ 3 - Ver data
++ 4 - Avançar data
++ 5 - Menu de gestão de utentes
++ 6 - Menu de gestão de obras
++ 7 - Menu de gestão de requisições
++ 0 - Sair
++ Escolha uma opção: 3
++ Data actual: 1
++ Menu Principal
++ 1 - Abrir ficheiro
++ 2 - Guardar ficheiro
+  3 - Ver data
+  4 - Avançar data
+  5 - Menu de gestão de utentes

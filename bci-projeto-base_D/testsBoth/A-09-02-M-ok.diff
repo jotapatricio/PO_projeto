@@ -1,0 +1,137 @@
+*** testsBoth/A-09-02-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-09-02-M-ok.outhyp	2025-10-15 16:11:25.039295600 +0100
+***************
+*** 13,33 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 8
+! A obra 8 deve ser devolvida até ao dia 4.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 3
+- Introduza o número da obra: 8
+- Deseja ser avisado quando algum exemplar for devolvido (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 13,52 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 3
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 8
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 44,51 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 8
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 63,79 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 69,75 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza o número de utente: 2
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 97,102 ----
+***************
+*** 77,85 ****
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 4
+! Introduza o número de utente: 3
+! DISPONIBILIDADE: 8 - 1 de 1 - DVD - The rise of Skywalker - 20 - Técnica e Científica - J. J. Abrams - 200505551
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 104,124 ----
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 2
+! Introduza o número de utente: 4
+! 4 - Luke Skywalker - last.jedi@universe.com - NORMAL - ACTIVO
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 3
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+! 4 - Luke Skywalker - last.jedi@universe.com - NORMAL - ACTIVO
+! 1 - Obi-Wan Kenobi - obiwan@jedi.org - NORMAL - ACTIVO
+! 3 - Rey - real.last.jedi@universe.com - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente

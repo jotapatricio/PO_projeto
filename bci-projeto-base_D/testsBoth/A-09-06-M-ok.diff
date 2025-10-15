@@ -1,0 +1,357 @@
+*** testsBoth/A-09-06-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-09-06-M-ok.outhyp	2025-10-15 16:11:27.492928200 +0100
+***************
+*** 13,68 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 1
+! A obra 1 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 3
+! Introduza o número da obra: 1
+! A obra 1 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 3
+! Introduza o número da obra: 8
+! A obra 8 deve ser devolvida até ao dia 4.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 4
+- Introduza o número da obra: 1
+- Deseja ser avisado quando algum exemplar for devolvido (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 4
+- Introduza o número da obra: 8
+- Deseja ser avisado quando algum exemplar for devolvido (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 3
+! Introduza o número da obra: 8
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 8
+! A obra 8 deve ser devolvida até ao dia 4.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 13,131 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 4
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 4
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 8
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 86,93 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza o número de utente: 4
+! DISPONIBILIDADE: 8 - 1 de 1 - DVD - The rise of Skywalker - 20 - Técnica e Científica - J. J. Abrams - 200505551
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 149,162 ----
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 108,114 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza o número de utente: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 177,190 ----
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 132,146 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 8
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 3
+! Introduza o número da obra: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 208,240 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 8
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 164,172 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza o número de utente: 4
+! DISPONIBILIDADE: 8 - 1 de 1 - DVD - The rise of Skywalker - 20 - Técnica e Científica - J. J. Abrams - 200505551
+! DISPONIBILIDADE: 1 - 1 de 2 - Livro - A arte de sobreviver no 36 - 20 - Ficção - Joao Fonseca - 1234567892
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 258,271 ----
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 190,197 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 289,304 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 215,221 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza o número de utente: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 322,335 ----
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 4
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente

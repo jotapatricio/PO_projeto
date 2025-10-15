@@ -1,0 +1,54 @@
+*** testsBoth/A-11-04-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-11-04-M-ok.outhyp	2025-10-15 16:11:29.359689600 +0100
+***************
+*** 13,29 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 7
+! A obra 7 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 1
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 13,44 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 7
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra

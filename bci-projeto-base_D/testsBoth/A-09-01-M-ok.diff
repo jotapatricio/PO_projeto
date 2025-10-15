@@ -1,0 +1,79 @@
+*** testsBoth/A-09-01-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-09-01-M-ok.outhyp	2025-10-15 16:11:24.540120500 +0100
+***************
+*** 16,22 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza o número de utente: 2
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 16,21 ----
+***************
+*** 24,31 ****
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 4
+! Introduza o número de utente: 1
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 23,31 ----
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 2
+! Introduza o número de utente: 4
+! 4 - Luke Skywalker - last.jedi@universe.com - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 33,40 ****
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 4
+! Introduza o número de utente: 3
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 33,42 ----
+  4 - Mostrar notificações de utente
+  5 - Saldar multa de utente
+  0 - Sair
+! Escolha uma opção: 1
+! Introduza o nome do utente: 4
+! Introduza o endereço de correio do utente: 3
+! Novo utente criado com o número 3.
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 43,50 ****
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza o número de utente: 6
+! Mostrar notificações de utente: Operação inválida: O utente 6 não existe.
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 45,59 ----
+  5 - Saldar multa de utente
+  0 - Sair
+  Escolha uma opção: 4
+! Menu de Gestão de Utentes
+! 1 - Registar utente
+! 2 - Mostrar utente
+! 3 - Listar utentes
+! 4 - Mostrar notificações de utente
+! 5 - Saldar multa de utente
+! 0 - Sair
+! Escolha uma opção: 6
+! Opção inválida!
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente

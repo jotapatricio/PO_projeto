@@ -1,0 +1,24 @@
+*** testsBoth/A-03-02-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-03-02-M-ok.outhyp	2025-10-15 16:11:15.847013100 +0100
+***************
+*** 34,41 ****
+  5 - Alterar inventário de uma obra
+  0 - Sair
+  Escolha uma opção: 3
+- Introduza o termo de pesquisa: Mestre
+- 2 - 3 de 3 - Livro - Analise Matematica sem Mestre - 19 - Técnica e Científica - Carlos Fonseca - 1234567890
+  Menu de obras
+  1 - Mostrar obra
+  2 - Mostrar todas as obras
+--- 34,39 ----
+***************
+*** 43,48 ****
+--- 41,48 ----
+  4 - Mostrar todas as obras de um criador
+  5 - Alterar inventário de uma obra
+  0 - Sair
++ Escolha uma opção: Mestre
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro

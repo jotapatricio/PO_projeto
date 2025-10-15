@@ -1,0 +1,521 @@
+*** testsBoth/A-11-10-M-ok.out	2025-10-15 15:38:54.000000000 +0100
+--- testsBoth/A-11-10-M-ok.outhyp	2025-10-15 16:11:33.352303100 +0100
+***************
+*** 13,37 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 9.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 3
+! A obra 3 deve ser devolvida até ao dia 16.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 4
+! A obra 4 deve ser devolvida até ao dia 16.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 13,60 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 4
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 81,103 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- O utente 2 deve pagar uma multa de EUR 60.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 3
+- O utente 2 deve pagar uma multa de EUR 25.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 104,143 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 3
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 118,124 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - SUSPENSO - EUR 0
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 158,164 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 142,155 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número de utente: 2
+- Introduza o número da obra: 4
+- O utente 2 deve pagar uma multa de EUR 25.
+- O utente deseja pagar multa (s/n)? s
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 182,204 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: 4
++ Opção inválida!
++ Menu de Gestão de Requisições
++ 1 - Requisitar obra
++ 2 - Devolver obra
++ 0 - Sair
++ Escolha uma opção: s
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+***************
+*** 170,176 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - FALTOSO - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 219,225 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 194,224 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- A obra 2 deve ser devolvida até ao dia 23.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 2
+- Introduza o número da obra: 2
+- A obra 2 deve ser devolvida até ao dia 23.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 243,303 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 243,249 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - FALTOSO - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 322,328 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 267,275 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 23.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 346,361 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 294,300 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - FALTOSO - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 380,386 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+***************
+*** 318,325 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 404,419 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 368,391 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+! A obra 2 deve ser devolvida até ao dia 29.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o número de utente: 2
+- Introduza o número da obra: 3
+- A obra 3 deve ser devolvida até ao dia 36.
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 462,508 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 434,441 ****
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número de utente: 2
+! Introduza o número da obra: 3
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+--- 551,567 ----
+  2 - Devolver obra
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 2
+! Menu de Gestão de Requisições
+! 1 - Requisitar obra
+! 2 - Devolver obra
+! 0 - Sair
+! Escolha uma opção: 3
+! Opção inválida!
+  Menu de Gestão de Requisições
+  1 - Requisitar obra
+  2 - Devolver obra
+***************
+*** 460,466 ****
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - CUMPRIDOR - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
+--- 586,592 ----
+  0 - Sair
+  Escolha uma opção: 2
+  Introduza o número de utente: 2
+! 2 - Darth Vader - darth@dark.force.coAm - NORMAL - ACTIVO
+  Menu de Gestão de Utentes
+  1 - Registar utente
+  2 - Mostrar utente
