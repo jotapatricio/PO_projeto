@@ -19,19 +19,19 @@ class DoSaveFile extends Command<LibraryManager> {
 
     @Override
   protected final void execute() {
-    String _currentFileName = _receiver.getCurrentFileName();
-    String _fileNameToSave = _currentFileName;
+    String currentFileName = _receiver.getCurrentFileName();
+    String fileNameToSave = currentFileName;
 
-    if (_fileNameToSave == null) {
+    if (fileNameToSave == null) {
       Form form = new Form();
       form.addStringField("_newFileName", Prompt.newSaveAs());
       form.parse();
 
-      _fileNameToSave = form.stringField("_newFileName");
+      fileNameToSave = form.stringField("_newFileName");
     }
     try { 
-      if (_currentFileName == null) {
-        _receiver.saveAs(_fileNameToSave);
+      if (currentFileName == null) {
+        _receiver.saveAs(fileNameToSave);
       } else {
         _receiver.save();
       }

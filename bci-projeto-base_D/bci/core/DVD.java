@@ -2,10 +2,10 @@ package bci.core;
 
 import java.util.*;
 
-public class DVD extends Work {
+public class Dvd extends Work {
     private final int _igac;
 
-    public DVD(int id, String title, int copies, Category category, int preco, int igac, List<Creator> diretor) {
+    public Dvd(int id, String title, int copies, Category category, int preco, int igac, List<Creator> diretor) {
         super(id, title, copies, category, preco, diretor);
         _igac = igac;
     }

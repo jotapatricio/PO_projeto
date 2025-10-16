@@ -4,32 +4,42 @@ import java.io.Serializable;
 
 public class User implements Serializable {
     private final int _id;
-    private String _behavior;
-    private String _isActive;
+    private UserBehavior _behavior;
+    private UserState _state;
     private String _name;
     private String _email;
     private int _fine;
 
     User(int id, String name, String email){
-        _id=id;
-        _behavior="NORMAL";
-        _name=name;
-        _email=email;
-        _fine=0;
-        _isActive="ACTIVO";
+        _id = id;
+        _behavior = new NormalBehavior();
+        _name = name;
+        _email = email;
+        _fine = 0;
+        _state = ActiveState.getInstance();
     }
 
-    String _isActive(){
-        return _isActive;
-    }
 
     public int getID(){return _id;}
 
-    void changeActive(){
-        if (_isActive.equals("ACTIVO"))
-            _isActive = "SUSPENSO";
-        else
-            _isActive = "ACTIVO";
+    public void suspend() {
+        _state.suspend(this);
+    }
+
+    public void reactivate() {
+        _state.reactivate(this);
+    }
+
+    public void setState(UserState newState) {
+        _state = newState;
+    }
+
+    public boolean canRequest() {
+        return _state.canRequest();
+    }
+
+    public UserState getState() {
+        return _state;
     }
 
     public String getEmail(){
@@ -41,12 +51,14 @@ public class User implements Serializable {
 }
 
     public String getBehavior() {
-        return _behavior;
+        return _behavior.getBehaviorClass();
     }
 
-    public void setBehavior(String behavior) {
+    public void setBehavior(UserBehavior behavior) {
         _behavior = behavior;
     }
+
+
 
     public int getFine() {
         return _fine;
@@ -59,12 +71,16 @@ public class User implements Serializable {
     public void payFine() {
         _fine = 0;
     }
+    public UserBehavior getUserBehavior() {
+        return _behavior;
+    }
 
     public String toString(){
-        if (_isActive.equals("ACTIVO"))
-            return _id + " - " + _name + " - " + _email + " - " + _behavior + " - " + _isActive;
-        else
-            return _id + " - " + _name + " - " + _email + " - " + _behavior + " - " + _isActive + " - EUR " + _fine;
+        // O estado (ACTIVO ou SUSPENSO) agora é obtido do objeto _state
+        String stateName = _state.getState();
+        String suspensionText = stateName.equals("SUSPENSO") ? " (Suspenso)" : "";
+        
+        return _id + " - " + _name + " - " + _email + " - " + getBehavior() + " - " + stateName + suspensionText;
     }
 
 }

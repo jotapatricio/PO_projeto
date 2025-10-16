@@ -20,8 +20,8 @@ class Library implements Serializable {
   private List <Creator> _creators = new ArrayList<>();
   private List <Work> _works = new ArrayList<>();
   private int _nextWorkId = 1;
-  private List <User> users = new ArrayList<>();
-  private int nextUserId = 1;
+  private List <User> _users = new ArrayList<>();
+  private int _nextUserId = 1;
   private List <Requests> _requests = new ArrayList<>();
 
   /**
@@ -60,9 +60,9 @@ class Library implements Serializable {
   * @param email Email do usuário.
   */
   void registerUser(String name, String email){
-        User user = new User(nextUserId, name, email);
-        users.add(user);
-        nextUserId++;
+        User user = new User(_nextUserId, name, email);
+        _users.add(user);
+        _nextUserId++;
         _isModified = true;
     }
   
@@ -73,7 +73,7 @@ class Library implements Serializable {
   */
 
   User getUser(int id) {
-    for (User u : users)
+    for (User u : _users)
       if (u.getID() == id)
           return u;
     return null;
@@ -85,7 +85,7 @@ class Library implements Serializable {
   */
 
   List<User> getAllUsers() {
-    List<User> sortedUsers = new ArrayList<>(users);
+    List<User> sortedUsers = new ArrayList<>(_users);
     //Define a ordenação: primária por nome, secundária por ID.
     sortedUsers.sort(
         Comparator.comparing(User::getName, String.CASE_INSENSITIVE_ORDER).thenComparingInt(User::getID));
@@ -106,12 +106,12 @@ class Library implements Serializable {
   }
 
   /**
-  * Regista um novo DVD na biblioteca.
+  * Regista um novo Dvd na biblioteca.
   */
 
-  void registerDVD(String title, int copies, Category category, int preco, int igac, List<Creator> diretor){
+  void registerDvd(String title, int copies, Category category, int preco, int igac, List<Creator> diretor){
     int newId = _nextWorkId++;
-    Work dvd = new DVD(newId, title, copies, category, preco, igac, diretor);
+    Work dvd = new Dvd(newId, title, copies, category, preco, igac, diretor);
     _works.add(dvd);
     _isModified = true;
   }

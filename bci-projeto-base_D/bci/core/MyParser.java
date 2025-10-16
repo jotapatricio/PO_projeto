@@ -75,7 +75,7 @@ class MyParser {
 
     List<Creator> diretor = Collections.singletonList(creator);
     
-    _library.registerDVD(title, nCopies, category, preco, igac, diretor);
+    _library.registerDvd(title, nCopies, category, preco, igac, diretor);
   }
   
   private void parseBook(String[] components, String line) throws UnrecognizedEntryException {

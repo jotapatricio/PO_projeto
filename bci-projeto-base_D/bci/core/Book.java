@@ -17,12 +17,14 @@ public class Book extends Work {
     private String formatCreators() {
         StringBuilder sb = new StringBuilder();
         List<Creator> creators = getCreators();
-        for (int i = 0; i < creators.size(); i++) {
-            sb.append(creators.get(i).getName());
-            if (i < creators.size() - 1) {
-                sb.append("; ");
-            }
+        for (Creator c : creators) {
+            sb.append(c.getName()).append("; ");
         }
+        
+        if (sb.length() > 0) {
+            sb.setLength(sb.length() - 2); 
+        }
+
         return sb.toString();
     }
     
