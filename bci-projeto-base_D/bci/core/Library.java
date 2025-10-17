@@ -189,6 +189,36 @@ class Library implements Serializable {
     _isModified = false;
   }
 
+  public boolean userHasRequestedWork(User user, Work work) {
+        for (Requests request : _requests) {
+            if (request.getUser().equals(user) && request.getWork().equals(work)) {
+                return true;
+            }
+        }
+        return false;
+  }
+
+  public int getAvailableCopies(Work work) {
+        int totalCopies = work.getCopies();
+        int requestedCopies = 0;
+        for (Requests request : _requests) {
+            if (request.getWork().equals(work)) {
+                requestedCopies++;
+            }
+        }
+        return totalCopies - requestedCopies;
+  } 
+  public List<Requests> getRequestsByUser(User user) {
+    List<Requests> userRequests = new ArrayList<>();
+    for (Requests request : _requests) {
+        if (request.getUser().equals(user)) {
+            userRequests.add(request);
+        }
+    }
+    return userRequests;
+  }
+
+
   /**
    * Read text input file at the beginning of the program and populates the
    * the state of this library with the domain entities represented in the text file.
