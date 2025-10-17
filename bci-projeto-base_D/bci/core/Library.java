@@ -1,7 +1,7 @@
 package bci.core;
 
 import java.io.*;
-import bci.core.exception.UnrecognizedEntryException;
+import bci.core.exception.*;
 import java.util.*;
 // FIXME import classes
 
@@ -106,7 +106,7 @@ class Library implements Serializable {
   }
 
   /**
-  * Regista um novo Dvd na biblioteca.
+  * Regista um novo DVD na biblioteca.
   */
 
   void registerDvd(String title, int copies, Category category, int preco, int igac, List<Creator> diretor){

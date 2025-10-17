@@ -4,7 +4,6 @@ import bci.core.LibraryManager;
 import bci.core.Work;
 import bci.app.exception.NoSuchWorkException;
 import pt.tecnico.uilib.menus.Command;
-import pt.tecnico.uilib.menus.CommandException;
 
 /**
  * 4.3.2. Mostrar obra.
@@ -16,7 +15,7 @@ class DoDisplayWork extends Command<LibraryManager> {
     addIntegerField("id", Prompt.workId());
   }
 
-  protected final void execute() throws CommandException {
+  protected final void execute() throws NoSuchWorkException{
     int id = integerField("id");
 
     try {
@@ -25,8 +24,8 @@ class DoDisplayWork extends Command<LibraryManager> {
         throw new NoSuchWorkException(id);
       }
       _display.popup(work.toString());
-    } catch (NoSuchWorkException e) {
-      throw e; 
+    } catch (bci.core.exception.NoSuchWorkException e) {
+        throw new NoSuchWorkException(id);
     }
   }
 }

@@ -1,7 +1,6 @@
 package bci.app.main;
 
 import bci.core.LibraryManager;
-import bci.core.exception.MissingFileAssociationException;
 import pt.tecnico.uilib.forms.Form;
 import pt.tecnico.uilib.menus.Command;
 import java.io.IOException;
@@ -35,6 +34,6 @@ class DoSaveFile extends Command<LibraryManager> {
       } else {
         _receiver.save();
       }
-    } catch (IOException | MissingFileAssociationException e){}
+    } catch (IOException | bci.core.exception.MissingFileAssociationException e){}
   }  
 }

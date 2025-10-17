@@ -29,8 +29,8 @@ class DoShowUser extends Command<LibraryManager> {
 
             _display.popup(user.toString());
 
-        } catch (NoSuchUserException e) {
-            throw e;
+        } catch (bci.core.exception.NoSuchUserException e) {
+            throw new NoSuchUserException(id);
         }
     }
 }

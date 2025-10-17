@@ -1,7 +1,6 @@
 package bci.core;
 
-import java.io.Serializable;
-public enum Category implements Serializable{
+public enum Category{
 
     //Constantes ENUM 
     FICTION("Ficção"),

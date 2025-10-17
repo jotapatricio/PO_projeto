@@ -2,8 +2,6 @@ package bci.app.main;
 
 import bci.core.LibraryManager;
 import bci.app.exception.FileOpenFailedException;
-import bci.core.exception.MissingFileAssociationException;
-import bci.core.exception.UnavailableFileException;
 import pt.tecnico.uilib.forms.Form;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
@@ -33,7 +31,9 @@ class DoOpenFile extends Command<LibraryManager> {
           } else {
             _receiver.save();
           }
-        } catch (IOException | MissingFileAssociationException e) {}
+        } catch (IOException | bci.core.exception.MissingFileAssociationException e) {
+            throw new FileOpenFailedException(e);
+        }
       }
     }
 
@@ -44,7 +44,7 @@ class DoOpenFile extends Command<LibraryManager> {
 
     try {
       _receiver.load(filename);
-    } catch (UnavailableFileException e) {
+    } catch (bci.core.exception.UnavailableFileException e) {
       throw new FileOpenFailedException(e);
     }
   }

@@ -1,7 +1,5 @@
 package bci.core;
 
-import bci.app.exception.NoSuchWorkException;
-import bci.app.exception.UserRegistrationFailedException;
 import bci.core.exception.*;
 import java.io.*;
 import java.util.*;
@@ -62,7 +60,7 @@ public class LibraryManager {
   * Procura um usuário pelo ID.
   */
 
-  public User getUserById(int id){
+  public User getUserById(int id) throws NoSuchUserException{
       return _library.getUser(id);
   }
 
