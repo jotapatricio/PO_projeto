@@ -1,18 +1,14 @@
 package bci.core;
 
-import bci.core.Library;
-import bci.core.Work;
-import bci.core.User;
-
 public abstract class Rule {
-    private final int id;
+    private final int _id;
 
     public Rule(int id) {
-        this.id = id;
+        _id = id;
     }
     public int getId() {
-        return id;
+        return _id;
     }
-    
+
     abstract boolean check(Library library, Work work, User user);
 }
